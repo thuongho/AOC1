@@ -25,6 +25,5 @@ calculateExtraFuel = (fuelMass, total) => {
 }
 
 console.time('aoc1');
-const fuelNeeded = fuelCalculator(MODULE_MASSES);
-console.log('total fuel needed', fuelNeeded);
+console.log('total fuel needed', fuelCalculator(MODULE_MASSES));
 console.timeEnd('aoc1');
