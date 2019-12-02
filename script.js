@@ -3,8 +3,7 @@ const MODULE_MASSES = [
 ];
 
 fuelNeededForAModule = (weight) => {
-  const total = Math.floor(weight / 3) - 2;
-  return total;
+  return Math.floor(weight / 3) - 2;
 };
 
 fuelCalculator = (mass) => {
