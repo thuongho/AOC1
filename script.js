@@ -20,9 +20,7 @@ fuelCalculator = (mass) => {
 
 calculateExtraFuel = (fuelMass, total) => {
   const extraFuel = fuelNeededForAModule(fuelMass);
-  if (extraFuel <= 0) {
-    return total;
-  }
+  if (extraFuel <= 0) return total;
   return calculateExtraFuel(extraFuel, extraFuel + total); 
 }
 
